@@ -20,7 +20,7 @@ public class AppConfig { //moze to tez byc plik XML lub same adnotacje
 	}
 	
 	@Bean
-	public RateConversionService rateConversionService(CurrencyRateProvider currencyRateProvider) {
+	public RateConversionService rateConversionService(CurrencyRateProvider currencyRateProvider) { //
 		RateConversionService rateConversionService = new RateConversionService(); //tworzy nowy obiekt który jest beanem
 		rateConversionService.setRateProvider(fileCurrencyRateProvider()); 	//tutaj okreslamy jaka klase przyjmie bean RateConversionService
 																			//czyli na jakiej klasie ten bean bêdzie pracowa³, bo dziêki interfejsowi CurrencyRateProvider
